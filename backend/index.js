@@ -7,6 +7,7 @@ const db = require('./database')
 const app = express();
 
 const PORT = 10000;
+const HOST = '0.0.0.0';
 
 app.get("/", (request, response) => {
     response.json({
@@ -15,5 +16,5 @@ app.get("/", (request, response) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Server is running at ${PORT}`)
+    console.log(`Server is running at http://${HOST}:${PORT}`)
 })
