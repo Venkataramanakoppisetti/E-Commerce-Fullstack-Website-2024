@@ -10,7 +10,7 @@ const PORT = 10000;
 
 app.get("/", (request, response) => {
     response.json({
-        "Welcome to E-Commerce-Website Backend...!!!"
+        message: "Welcome to E-Commerce-Website Backend...!!!"
     })
 })
 
